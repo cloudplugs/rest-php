@@ -31,10 +31,9 @@
     *             All HTTP requests to the server are synchronous. Many functions are provided in two different forms: an explicit parameters version and a compact parameter version (passed within an array or a JSON encoded string).
     */
 
-
     class RestClient {
 
-        //costanti
+        // consts
         const TIMEOUT = 60; //remote request timeout value (seconds)
         const BASEURL = "https://api.cloudplugs.com/iot/";
         const HTTP_STR = "http://";
@@ -2026,4 +2025,3 @@
         }
 
     }
-

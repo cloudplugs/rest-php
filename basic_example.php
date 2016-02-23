@@ -20,8 +20,8 @@ specific language governing permissions and limitations
 under the License.
 </license> */
 
-$AUTH_PLUGID =  "dev-xxxxxxxxxxxxxxxxxxx";
-$AUTH_PASS = "your-password";
+$AUTH_PLUGID =  "dev-xxxxxxxxxxxxxxxxxxx"; /**< The device plug ID or your CloudPlugs account id if AUTH_MASTER is TRUE */
+$AUTH_PASS = "your-password"; /**< The device connection password or your CloudPlugs account password if AUTH_MASTER is TRUE */
 $AUTH_MASTER = TRUE;
 
 include_once 'RestClient.class.php';
@@ -37,5 +37,5 @@ $value = rand ( 0 , 100 );
 $data = array("data" => $value);
 $res =  $client->publishData($data, $channel);
 
-//show server output
+// show server output
 echo "Http Response: " . $client->getLastHttpResultCode() . ", Published OID:"  . var_export($res, true) . "\n";
